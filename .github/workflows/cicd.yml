@@ -13,7 +13,7 @@ jobs: #Задания, которые будет выполнять GitHab, ко
         uses: actions/checkout@v3 #он берёт наш репозиторий и переносит его делать checkot образ делать какие-то дальнейшие шаги
       - name: "Install python"
         uses: actions/setup-python@v4
-        with: #указание версии питона
+        with:
           python-version: '3.8'
           architecture: 'x64'
       - name: "Install project dependencies" #Установка зависимостей
